@@ -28,7 +28,6 @@
         z-index: 5;
         position: absolute;
         bottom: 0;
-        opacity: .1;
         -webkit-transition: all 2s;
         -moz-transition: all 2s;
         -ms-transition: all 2s;
@@ -36,9 +35,6 @@
         transition: all 2s
     }
 
-    audio:hover {
-        opacity: 1
-    }
 
     .wall {
         position: absolute;
@@ -166,55 +162,13 @@
         }
     }
 
-    button,
-    input {
-        font-size: 1em;
-        border-radius: 3px;
-        -webkit-appearance: none
-    }
-
-    "
-input {
-        width: 100%;
-        padding: 5px;
-        box-sizing: border-box;
-        border: 1px solid #0000;
-        background-color: #0000;
-        resize: vertical
-    }
-
-    input:focus {
-        background-color: #0000;
-        outline: 0;
-        border: 1px solid #fff
-    }
-
-    button {
-        border: 0;
-        background: #cecece5e;
-        color: #fff;
-        cursor: pointer;
-        opacity: 1;
-        user-select: none
-    }
-
-    .return-home:hover,
-    button:focus,
-    button:hover {
-        opacity: .9
-    }
-
-    button:active {
-        opacity: 1
-    }
-
     .main {
         z-index: 999;
         width: 100%;
         max-width: 50%;
         height: 30%;
         padding: 30px;
-        background-color: #0000001f;
+        background-color: #ffffff5e;
         border-radius: 20px;
         box-shadow: 0 10px 60px 0 rgba(255, 255, 255, .09);
         transition: all .12s ease-out;
@@ -227,44 +181,15 @@ input {
         text-indent:2em;
     }
 
-    .alert {
-        width: 80px
-    }
-
-    .mk-side-form {
-        margin-bottom: 28px
-    }
-
-    .mk-side-form input {
-        float: left;
-        padding: 2px 10px;
-        width: 77%;
-        height: 37px;
-        border: 1px solid #0000;
-        border-right-color: transparent;
-        border-radius: 2px 0 0 2px;
-        line-height: 37px
-    }
-
-    .mk-side-form button {
-        position: relative;
-        overflow: visible;
-        width: 23%;
-        height: 37px;
-        border-radius: 0 2px 2px 0;
-        text-transform: uppercase
-    }
-
-    #pw-error {
-        color: red;
-        margin-top: 15px;
-        margin-bottom: -20px
-    }
 
     .return-home {
         text-decoration: none;
-        color: #fff;
+        color: #000;
         font-size: 26px
+    }
+
+    .return-home:hover {
+        opacity: .9
     }
 
     #site-footer {
@@ -272,26 +197,25 @@ input {
         z-index: 999;
         bottom: 0;
         width: 100%;
-    }
-
-    #site-footer {
-        font-size: 13px;
         margin-top: 10px;
         text-align: center;
         padding-bottom: 12px;
     }
 
-    #site-footer,
-    #site-footer a {
-        color: #9a9a9a;
-        vertical-align: baseline;
-        text-decoration: none;
+
+    #site-footer p {
+        float:left;
+        margin: 0px 0px 0px 5px;
     }
 
-    #site-footer .fa {
-        margin-left: 5px;
-        font-size: 20px;
+
+    #site-footer a {
+    	color: #a8e4f2;
+        vertical-align: baseline;
+        text-decoration: none;
+        display:inline-block;
     }
+
     </style>
 </head>
 
@@ -329,11 +253,15 @@ input {
     }
     </script>
     <footer id="site-footer">
-    	© 版权所有 2023 XIUI
-        <a target="_blank" href="/" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+    	<a target="_blank" href="/">
+    		<p>© 版权所有 2023 XIUI</p>
+    	</a>
+    	<br>
+        <a target="_blank" href="/">
             <img src="https://s11.mogucdn.com/mlcdn/fe720b/191127_84dki40lhed1h3i03jdgk0fge1bgi_20x20.png" style="float:left;">
-            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#fff;">鲁ICP备18055115号</p>
-        </a><br>
+            <p>鲁ICP备18055115号</p>
+        </a>
+        <br>
     </footer>
 </body>
 
